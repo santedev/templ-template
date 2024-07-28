@@ -19,7 +19,7 @@ func main() {
 	}
 	r := chi.NewRouter()
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"https://jsonplaceholder.typicode.com"},
+		AllowedOrigins:   []string{"*"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
 		ExposedHeaders:   []string{"Link"},
